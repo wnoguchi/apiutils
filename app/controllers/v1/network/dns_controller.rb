@@ -16,9 +16,7 @@ class V1::Network::DnsController < ApplicationController
         hostname: hostname
       }
     end
-    respond_to do |format|
-      format.json { render :json => data }
-    end
+    render :json => data
   end
 
   private

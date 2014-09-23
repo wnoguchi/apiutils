@@ -5,8 +5,6 @@ class V1::Network::IpController < ApplicationController
       status: 'success',
       ipv4: remote_ip
     }
-    respond_to do |format|
-      format.json { render :json => data }
-    end
+    render :json => data
   end
 end
