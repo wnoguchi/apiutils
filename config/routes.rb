@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   namespace :v1 do
   namespace :network do
+    get 'dns/lookup'
+    end
+  end
+
+  namespace :v1 do
+  namespace :network do
     get 'ip/ipv4'
     end
   end
